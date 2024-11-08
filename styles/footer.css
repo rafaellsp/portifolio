@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+
+footer {
+  background-color: #333; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 0; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  margin-top: auto; /* Faz o footer se mover para a parte inferior */
+}

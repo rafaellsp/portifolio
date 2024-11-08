@@ -1,0 +1,46 @@
+/* FALA COMIGO*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #47454560;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+
+}
+
+
+form .btn-submit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-submit input {
+    width: 120px;
+    background-color: #458efa;
+    color: #0a0909;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}

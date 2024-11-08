@@ -1,0 +1,187 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #458efa;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #458dfaa2;
+    transform: scale(1.05)
+}
+
+button:hover, form .btn-submit input:hover {
+    box-shadow: 0px 0px 8px #458dfaa2;
+    transform: scale(1.05)
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #458efa;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    /* Geral*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+      
+        font-size: 30px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    /* Cabeçalho*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* Topo do site*/
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+    
+    section.topo-do-site h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* Especialidades */
+    section.especialidades {
+    padding: 40px 8%;
+
+    }
+
+    section.especialidades .flex {
+       
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    /*Sobre*/
+    section.sobre {
+        padding: 80px 8%;
+        text-align: justify;
+    }
+
+    section.sobre .txt-sobre h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img-sobre img {
+        width: 100%;
+        height: auto;
+    }
+        
+    /* portifolio*/
+    section.portifolio {
+        padding: 80px 8%;
+        box-shadow: 0 0 40px 10px #ffffff1d;
+    }
+
+    
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        height: auto;
+        align-items: center;
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+     }
+     
+     /* Footer*/
+
+     
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/*
+form input::placeholder {
+}*/
+

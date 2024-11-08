@@ -1,0 +1,102 @@
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+}
+
+section.topo-do-site .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    text-align: center;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 40px;
+    
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #458efa;
+    text-align: center;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+
+
+.txt-animado {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.txt-animado span{
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: #458efa;
+    animation: palavras 20s infinite;
+}
+
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #458efa;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 5px);
+    background-color: #0d0d0d;
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Analista.";
+    }
+
+    21%,40%{
+        content: "Desenvolvedor.";
+    }
+
+    41%,60%{
+        content: "Freelancer.";
+    }
+
+    61%,80%{
+        content: "Front-end.";
+    }
+
+    81%,100%{
+        content: "Programador.";
+    }
+
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #523535;
+    }
+}
+
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 16px);
+    }
+}
+

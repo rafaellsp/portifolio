@@ -1,0 +1,49 @@
+/* Especialidades */
+
+section.especialidades {
+    padding: 40px 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33323244;
+   
+}
+
+
+
+.skill-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+.skill {
+    margin: 100px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background-color: #458efa;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    transition: width 1s ease-in-out;
+}
+
+.titulo {
+    margin-top: 40px;
+}
