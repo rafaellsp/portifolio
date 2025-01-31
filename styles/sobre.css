@@ -34,3 +34,42 @@ section.sobre .flex {
     
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+    section.sobre .flex {
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre .txt-sobre h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre .txt-sobre h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 18px;
+    }
+}

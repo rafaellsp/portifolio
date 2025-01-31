@@ -47,3 +47,30 @@ section.especialidades {
 .titulo {
     margin-top: 40px;
 }
+
+/* Título */
+.titulo {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skill-container {
+        width: 90%; /* Ajusta a largura para telas menores */
+    }
+    
+    .skill {
+        margin: 90px 0; /* Reduz a margem em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-name {
+        font-size: 16px; /* Ajusta o tamanho da fonte em telas muito pequenas */
+    }
+    
+    .progress {
+        font-size: 12px; /* Reduz o tamanho da fonte da barra de progresso */
+    }
+}
