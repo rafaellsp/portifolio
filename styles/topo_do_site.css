@@ -43,60 +43,39 @@ section.topo-do-site .flex {
     position: relative;
 }
 
-.txt-animado span::before {
-    content: "";
-    color: #458efa;
-    animation: palavras 20s infinite;
+.txt-animado {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+/* Texto animado */
+.txt-animado span {
+    color: #458efa;
+    display: inline-block;
+    position: relative;
+}
 
-.txt-animado span::after{
+/* Cursor piscando */
+.txt-animado span::after {
     content: "";
     position: absolute;
     height: 100%;
     border-left: 2px solid #458efa;
-    right: -10px;
-    animation: cursor .8s infinite, digita 20s steps(15) infinite;
-    width: calc(100% + 5px);
+    animation: cursor 0.8s infinite, digita 1s steps(14) infinite alternate;
     background-color: #0d0d0d;
+    right: 0;
+    width: 0; /* Começa oculto */
 }
 
-@keyframes palavras {
-    0%,20%{
-        content: "Analista.";
-    }
-
-    21%,40%{
-        content: "Desenvolvedor.";
-    }
-
-    41%,60%{
-        content: "Freelancer.";
-    }
-
-    61%,80%{
-        content: "Front-end.";
-    }
-
-    81%,100%{
-        content: "Programador.";
-    }
-
-}
-
+/* Animação do cursor */
 @keyframes cursor {
-    0% {
-        border-left: 2px solid #523535;
+    0%, 100% {
+        border-left-color: transparent;
     }
-}
-
-
-@keyframes digita {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: calc(100% + 16px);
+    50% {
+        border-left-color: #458efa;
     }
 }
 
